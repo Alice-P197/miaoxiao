@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>喵小盒 · 住进手机的小黑猫</title>
-<meta name="description" content="喵小盒是一款 Android 悬浮桌面宠物助手：小黑猫常驻桌面，记日报、翻日历、写网页、看使用时长。">
+<meta name="description" content="喵小盒是一款 Android 悬浮桌面宠物助手：小黑猫常驻桌面，能聊天、读 PDF、看子智能体干活，也能把日报、日程、习惯和记忆收在一处。">
 <style>
 :root{
   --ink:#141A16; --sub:#5C6B63; --line:#DDE5DE;
@@ -33,7 +33,7 @@ nav{position:sticky;top:0;z-index:20;backdrop-filter:blur(14px);
 h1{font-size:46px;line-height:1.16;letter-spacing:-.025em;margin:18px 0 0}
 h1 em{font-style:normal;position:relative;white-space:nowrap}
 h1 em:after{content:"";position:absolute;left:0;right:0;bottom:2px;height:12px;background:#CDE7D8;z-index:-1;border-radius:4px}
-.lead{font-size:15.5px;line-height:1.85;color:var(--sub);margin:18px 0 0;max-width:470px}
+.lead{font-size:15.5px;line-height:1.85;color:var(--sub);margin:18px 0 0;max-width:500px}
 .cta-row{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin-top:28px}
 .dl{display:inline-flex;align-items:center;gap:10px;background:var(--green);color:#fff;text-decoration:none;
   padding:15px 26px;border-radius:14px;font-weight:700;font-size:15px;box-shadow:0 10px 26px rgba(46,107,82,.22)}
@@ -46,7 +46,7 @@ h1 em:after{content:"";position:absolute;left:0;right:0;bottom:2px;height:12px;b
 section{padding:54px 0;border-top:1px solid rgba(221,229,222,.8)}
 .sec-head{display:flex;align-items:end;justify-content:space-between;gap:20px;margin-bottom:24px}
 h2{font-size:26px;letter-spacing:-.02em;margin:0}
-.sec-head p{margin:0;color:var(--sub);font-size:13px;max-width:420px;text-align:right}
+.sec-head p{margin:0;color:var(--sub);font-size:13px;max-width:440px;text-align:right}
 .shots{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
 .shot{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:10px;box-shadow:0 8px 24px rgba(20,26,22,.05)}
 .shot img{width:100%;border-radius:13px;display:block}
@@ -59,6 +59,10 @@ h2{font-size:26px;letter-spacing:-.02em;margin:0}
   display:flex;align-items:center;justify-content:center;font-size:15px;font-weight:700}
 .f h3{font-size:15px;margin:14px 0 6px}
 .f p{font-size:12.8px;line-height:1.72;color:var(--sub);margin:0}
+.trust{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:22px}
+.trust div{background:var(--mint);border-radius:16px;padding:18px}
+.trust b{display:block;font-size:13px;margin-bottom:4px}
+.trust span{font-size:12px;color:var(--sub);line-height:1.7}
 .timeline{display:grid;grid-template-columns:120px 1fr;gap:0 22px}
 .tl-time{font-size:12px;color:var(--sub);padding:16px 0;border-top:1px solid var(--line)}
 .tl-body{padding:16px 0;border-top:1px solid var(--line)}
@@ -75,13 +79,13 @@ footer b{color:var(--ink)}
   .hero{grid-template-columns:1fr;padding-top:40px;gap:26px}
   h1{font-size:34px}.lead{font-size:14px}
   .phone{max-width:330px;margin:0 auto}
-  .shots,.features,.steps{grid-template-columns:1fr 1fr}
+  .shots,.features,.steps,.trust{grid-template-columns:1fr 1fr}
   .sec-head{display:block}.sec-head p{text-align:left;margin-top:8px}
   .nav-links a:not(.nav-cta){display:none}
   .timeline{grid-template-columns:78px 1fr;gap:0 12px}
 }
 @media (max-width:560px){
-  .shots,.features,.steps{grid-template-columns:1fr}
+  .shots,.features,.steps,.trust{grid-template-columns:1fr}
   h1{font-size:30px}
   .wrap{padding:0 18px}
 }
@@ -96,34 +100,34 @@ footer b{color:var(--ink)}
     <a href="#features">能做什么</a>
     <a href="#changelog">版本历程</a>
     <a href="#install">安装</a>
-    <a class="nav-cta" href="https://github.com/Alice-P197/miaoxiao/releases/latest/download/miaoxiao-v3.10.1.apk">下载 APK</a>
+    <a class="nav-cta" href="https://github.com/Alice-P197/miaoxiao/releases/latest/download/miaoxiao-v3.14.1.apk">下载 APK</a>
   </div>
 </div></nav>
 
 <header class="wrap hero">
   <div>
-    <span class="tag"><span class="dot"></span> v3.10.1 · ANDROID</span>
-    <h1>桌面上住着一只小黑猫，<br>它<em>记得你每一天</em>。</h1>
-    <p class="lead">不是又一个聊天框。喵小盒常驻在桌面，翻你的使用记录写日报，按日历存好每一天，会写网页、能存 PDF，也会在你深夜还亮着屏的时候，轻轻冒一句。</p>
+    <span class="tag"><span class="dot"></span> v3.14.1 · ANDROID</span>
+    <h1>桌面上住着一只小黑猫，<br>它把<em>每一天</em>都记成了自己的事。</h1>
+    <p class="lead">不是又一个只会弹字的聊天框。喵小盒常驻桌面，能陪你聊、替你读 PDF，把长回答拆成看得懂的过程，也会把日报、日程、习惯和记忆收在一处。</p>
     <div class="cta-row">
-      <a class="dl" href="https://github.com/Alice-P197/miaoxiao/releases/latest/download/miaoxiao-v3.10.1.apk">↓ 下载 APK · 33.6 MB</a>
+      <a class="dl" href="https://github.com/Alice-P197/miaoxiao/releases/latest/download/miaoxiao-v3.14.1.apk">↓ 下载 APK · 33.7 MB</a>
       <a class="ghost" href="#install">先看安装步骤</a>
     </div>
-    <div class="meta">Android 8.0 及以上 · 无需 Google 服务 · 数据只留在本机</div>
+    <div class="meta">Android 8.0 及以上 · 不需要注册账号 · 对话与记录默认只存本机</div>
   </div>
   <div>
-    <div class="phone"><img src="https://aka.doubaocdn.com/s/zBUAR1TCmX" alt="喵小盒对话页"></div>
-    <div class="hero-note">可以换深色 / 浅色，猫会跟着你的作息换状态</div>
+    <div class="phone"><img src="https://aka.doubaocdn.com/s/40toUUnhuG" alt="喵小盒对话页"></div>
+    <div class="hero-note">思考过程在回答上方，子智能体干活时能看见它在想什么</div>
   </div>
 </header>
 
 <section class="wrap" id="shots">
   <div class="sec-head">
     <h2>它长这样</h2>
-    <p>毛玻璃气泡、表格和图表都能渲染；写出来的网页，点一下就能看。</p>
+    <p>浅色气泡、整幅正文、过程卡片；表格和网页都能直接渲染。</p>
   </div>
   <div class="shots">
-    <div class="shot"><img src="https://aka.doubaocdn.com/s/zBUAR1TCmX" alt="对话页"><div class="cap"><b>对话</b><span>流式输出</span></div></div>
+    <div class="shot"><img src="https://aka.doubaocdn.com/s/40toUUnhuG" alt="对话页"><div class="cap"><b>对话</b><span>思考在上方</span></div></div>
     <div class="shot"><img src="https://aka.doubaocdn.com/s/r4NTil6LBU" alt="图表渲染"><div class="cap"><b>表格与图表</b><span>边生成边渲染</span></div></div>
     <div class="shot"><img src="https://aka.doubaocdn.com/s/Oqip2d78Uo" alt="网页预览"><div class="cap"><b>网页预览</b><span>可存 PDF</span></div></div>
   </div>
@@ -132,15 +136,20 @@ footer b{color:var(--ink)}
 <section class="wrap" id="features">
   <div class="sec-head">
     <h2>它真的能做事</h2>
-    <p>每一项都在本机完成，不靠“看起来像”。</p>
+    <p>不是演示，是每天都能点开用的东西。</p>
   </div>
   <div class="features">
-    <div class="f"><div class="ico">猫</div><h3>常驻桌面，不失踪</h3><p>悬浮小猫随时在，点一下回对话；更新安装后会自动回来，不用重新召唤。</p></div>
-    <div class="f"><div class="ico">历</div><h3>报告日历</h3><p>写过日报的日期打绿点，点开任意一天看日报、那周周报、那月月报，图文排版。</p></div>
-    <div class="f"><div class="ico">网</div><h3>写网页，直接看</h3><p>HTML 代码块变成可预览卡片，全屏渲染真实页面，还能通过系统打印存成 PDF。</p></div>
-    <div class="f"><div class="ico">记</div><h3>带日期的长期记忆</h3><p>记的事不会因为条数多被挤掉；问“上周三发生了什么”，它按日期翻日报和记忆。</p></div>
-    <div class="f"><div class="ico">接</div><h3>多接口、多 Key</h3><p>DeepSeek、OpenAI、Claude 等主流接口都能接；多套配置在下拉里一次切换。</p></div>
-    <div class="f"><div class="ico">手</div><h3>手势与主动陪伴</h3><p>MediaPipe 手部关键点识别，挥手、比心、点赞都有回应；摄像头监测可单独开关。</p></div>
+    <div class="f"><div class="ico">猫</div><h3>常驻桌面，不失踪</h3><p>悬浮小黑猫随时在，点一下回对话；切到别的 App 再回来，会话还在。</p></div>
+    <div class="f"><div class="ico">想</div><h3>思考过程在回答上方</h3><p>它先想、再写，过程收在顶部；不想看可以折叠，不用在答案下面翻。</p></div>
+    <div class="f"><div class="ico">队</div><h3>子智能体干活看得见</h3><p>每个子智能体一张卡，显示任务、流式正文、具体思考和工具调用；切回历史还能展开。</p></div>
+    <div class="f"><div class="ico">史</div><h3>历史会话能管</h3><p>搜索标题或内容，按今天、昨天、日期分组；支持重命名、删除，当前会话有标记。</p></div>
+    <div class="f"><div class="ico">记</div><h3>日报、日程、习惯、记忆</h3><p>左抽屉直接进：日报周报月报、习惯打卡、长期记忆、未来 30 天日程，都能打开和操作。</p></div>
+    <div class="f"><div class="ico">文</div><h3>PDF 和图片一起发</h3><p>底部一个附件入口；PDF 自动读前几页，图片直接进对话，不用来回切按钮。</p></div>
+  </div>
+  <div class="trust">
+    <div><b>不需要账号</b><span>装好就能用，不注册、不绑定手机号。</span></div>
+    <div><b>对话默认留在本机</b><span>聊天、报告、记忆存在本机；只有你主动确认分享，才会生成公开链接。</span></div>
+    <div><b>能停，也能切模型</b><span>生成到一半可以停；已配置的模型在一个下拉里切换。</span></div>
   </div>
 </section>
 
@@ -150,9 +159,9 @@ footer b{color:var(--ink)}
     <p>不堆版本号，只挑每个阶段真正解决的事。</p>
   </div>
   <div class="timeline">
-    <div class="tl-time">V1</div><div class="tl-body"><b>先让小猫住进桌面</b><span>悬浮常驻、点一下回到对话。聊天、提醒和记录都只留在本机，不需要额外账号。</span></div>
+    <div class="tl-time">V1</div><div class="tl-body"><b>先让小猫住进桌面</b><span>悬浮常驻、点一下回到对话。聊天、提醒和记录都留在本机，不需要额外账号。</span></div>
     <div class="tl-time">V2</div><div class="tl-body"><b>让它看懂表格，也记得住事</b><span>逐字流式回复，表格、图表正常渲染；日报周报开始有固定格式，深浅两套界面都能用。</span></div>
-    <div class="tl-time">V3</div><div class="tl-body"><b>把报告、网页和记忆串起来</b><span>报告按日历管理，随时翻回某一天；写好的网页直接预览、存成 PDF；记忆带日期长期保留，隔多久问都还在。</span></div>
+    <div class="tl-time">V3</div><div class="tl-body"><b>把对话、过程和日子串起来</b><span>思考条移到回答上方，子智能体过程跟着消息保存；历史会话可搜索、可分组；日报、日程、习惯和记忆都有入口；PDF、网页预览和分享链接接进对话。</span></div>
   </div>
 </section>
 
@@ -171,7 +180,7 @@ footer b{color:var(--ink)}
 
 <footer class="wrap">
   <div><b>喵小盒</b> · 一只住在 Android 桌面上的小黑猫</div>
-  <div>v3.10.1 · 数据只存在本机</div>
+  <div>v3.14.1 · 对话与记录默认只存在本机</div>
 </footer>
 
 </body>
