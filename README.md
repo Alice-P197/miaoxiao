@@ -2,7 +2,7 @@
 
 一只住在 Android 桌面上的小黑猫。常驻悬浮、写日报周报、按日历翻记录、会写网页并能存 PDF。
 
-- 当前版本：v3.14.1（versionCode 37）
+- 当前版本：v3.15.0（versionCode 38）
 - 安装包：见 [Releases](https://github.com/Alice-P197/miaoxiao/releases/latest)
 - 发布页：https://alice-p197.github.io/miaoxiao/
 
@@ -10,7 +10,7 @@
 
 直接下载最新 APK：
 
-https://github.com/Alice-P197/miaoxiao/releases/latest/download/miaoxiao-v3.14.1.apk
+https://github.com/Alice-P197/miaoxiao/releases/latest/download/miaoxiao-v3.15.0.apk
 
 要求 Android 8.0 及以上；不需要 Google 服务；所有使用记录、报告与记忆只存在本机。
 
@@ -25,6 +25,7 @@ https://github.com/Alice-P197/miaoxiao/releases/latest/download/miaoxiao-v3.14.1
 - V1：小猫住进桌面，悬浮常驻，点一下回到对话
 - V2：流式回复、表格与图表、日报周报、深浅两套界面
 - V3：对话页对齐 DeepSeek、思考过程在回答上方、子智能体过程可见、历史会话管理、报告日历、日程/习惯/记忆入口、网页预览与 PDF
+- V3.15：作息与熄屏状态判断、长回答截断自动续写、代码块与半截网页兜底、当前页面和通知预览读取、常用 App 别名打开
 
 ## 说明
 
